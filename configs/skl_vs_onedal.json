@@ -1,0 +1,40 @@
+{
+    "common": {
+        "lib": "sklearn",
+        "data-format": "pandas",
+        "data-order": "F",
+        "dtype": "float64"
+    },
+    "cases": [
+        {
+            "algorithm": "dbscan",
+            "eps": 1.7e3,
+            "min-samples": 3,
+            "dataset": [
+                {
+                    "source": "npy",
+                    "name": "mnist_10K_cluster.npy",
+                    "training":
+                    {
+                        "x": "data/mnist_10K_cluster.npy"
+                    }
+                }
+            ]
+        },
+        {
+            "algorithm": "dbscan",
+            "eps": 5,
+            "min-samples": 3,
+            "dataset": [
+                {
+                    "source": "npy",
+                    "name": "hepmass_10K_cluster.npy",
+                    "training":
+                    {
+                        "x": "data/hepmass_10K_cluster.npy"
+                    }
+                }
+            ]
+        }
+    ]
+}
