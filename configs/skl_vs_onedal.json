@@ -3,9 +3,10 @@
         "lib": "sklearn",
         "data-format": "pandas",
         "data-order": "F",
-        "dtype": "float64"
+        "dtype": [ "float32", "float64" ],
+        "time-method": "box_filter"
     },
-    "cases": [
+    "cases2": [
         {
             "algorithm": "dbscan",
             "eps": 1.7e3,
@@ -35,6 +36,143 @@
                     }
                 }
             ]
+        }
+    ],
+    "cases": [
+        {
+            "algorithm": "kmeans",
+            "dataset": [
+                {
+                    "source": "npy",
+                    "name": "higgs_one_m_clustering",
+                    "training":
+                    {
+                        "x": "data/higgs_one_m_clustering.npy"
+                    }
+                }
+            ],
+            "n-clusters": 10,
+            "maxiter": 100
+        },
+        {
+            "algorithm": "kmeans",
+            "dataset": [
+                {
+                    "source": "npy",
+                    "name": "higgs_one_m_clustering",
+                    "training":
+                    {
+                        "x": "data/higgs_one_m_clustering.npy"
+                    }
+                }
+            ],
+            "n-clusters": [ 100, 250 ],
+            "maxiter": 10
+        },
+        {
+            "algorithm": "kmeans",
+            "dataset": [
+                {
+                    "source": "npy",
+                    "name": "epsilon_50K_cluster",
+                    "training":
+                    {
+                        "x": "data/epsilon_50K_cluster.npy"
+                    }
+                }
+            ],
+            "n-clusters": 10,
+            "maxiter": 100
+        },
+        {
+            "algorithm": "kmeans",
+            "dataset": [
+                {
+                    "source": "npy",
+                    "name": "epsilon_50K_cluster",
+                    "training":
+                    {
+                        "x": "data/epsilon_50K_cluster.npy"
+                    }
+                }
+            ],
+            "n-clusters": [ 1024, 2048 ],
+            "maxiter": 10
+        },
+        {
+            "algorithm": "kmeans",
+            "dataset": [
+                {
+                    "source": "npy",
+                    "name": "hepmass_1M_cluster",
+                    "training":
+                    {
+                        "x": "data/hepmass_1M_cluster.npy"
+                    }
+                }
+            ],
+            "n-clusters": [ 100, 250 ],
+            "maxiter": 10
+        },
+        {
+            "algorithm": "kmeans",
+            "dataset": [
+                {
+                    "source": "npy",
+                    "name": "hepmass_1M_cluster",
+                    "training":
+                    {
+                        "x": "data/hepmass_1M_cluster.npy"
+                    }
+                }
+            ],
+            "n-clusters": 10,
+            "maxiter": 100
+        },
+        {
+            "algorithm": "kmeans",
+            "dataset": [
+                {
+                    "source": "npy",
+                    "name": "susy_cluster",
+                    "training":
+                    {
+                        "x": "data/susy_cluster.npy"
+                    }
+                }
+            ],
+            "n-clusters": [ 100, 250 ],
+            "maxiter": 10
+        },
+        {
+            "algorithm": "kmeans",
+            "dataset": [
+                {
+                    "source": "npy",
+                    "name": "susy_cluster",
+                    "training":
+                    {
+                        "x": "data/susy_cluster.npy"
+                    }
+                }
+            ],
+            "n-clusters": 10,
+            "maxiter": 100
+        },
+        {
+            "algorithm": "kmeans",
+            "dataset": [
+                {
+                    "source": "npy",
+                    "name": "cifar_cluster",
+                    "training":
+                    {
+                        "x": "data/cifar_cluster.npy"
+                    }
+                }
+            ],
+            "n-clusters": [ 512, 1024, 2048 ],
+            "maxiter": 10
         }
     ]
 }
