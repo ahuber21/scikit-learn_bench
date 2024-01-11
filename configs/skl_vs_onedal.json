@@ -6,7 +6,7 @@
         "dtype": [ "float32", "float64" ],
         "time-method": "box_filter"
     },
-    "cases2": [
+    "cases": [
         {
             "algorithm": "dbscan",
             "eps": 1.7e3,
@@ -36,9 +36,7 @@
                     }
                 }
             ]
-        }
-    ],
-    "cases": [
+        },
         {
             "algorithm": "kmeans",
             "dataset": [
@@ -173,6 +171,39 @@
             ],
             "n-clusters": [ 512, 1024, 2048 ],
             "maxiter": 10
+        },
+        {
+            "algorithm": "linear",
+            "dataset": [
+                {
+                    "source": "npy",
+                    "name": "higgs1m",
+                    "training":
+                    {
+                        "x": "data/higgs1m_x_train.npy",
+                        "y": "data/higgs1m_y_train.npy"
+                    },
+                    "testing":
+                    {
+                        "x": "data/higgs1m_x_test.npy",
+                        "y": "data/higgs1m_y_test.npy"
+                    }
+                },
+                {
+                    "source": "npy",
+                    "name": "year_prediction_msd",
+                    "training":
+                    {
+                        "x": "data/year_prediction_msd_x_train.npy",
+                        "y": "data/year_prediction_msd_y_train.npy"
+                    },
+                    "testing":
+                    {
+                        "x": "data/year_prediction_msd_x_test.npy",
+                        "y": "data/year_prediction_msd_y_test.npy"
+                    }
+                }
+            ]
         }
     ]
 }
