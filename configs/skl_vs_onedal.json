@@ -14,10 +14,10 @@
             "dataset": [
                 {
                     "source": "npy",
-                    "name": "mnist_10K_cluster.npy",
+                    "name": "mnist",
                     "training":
                     {
-                        "x": "data/mnist_10K_cluster.npy"
+                        "x": "data/mnist_x_train.npy"
                     }
                 }
             ]
@@ -29,10 +29,11 @@
             "dataset": [
                 {
                     "source": "npy",
-                    "name": "hepmass_10K_cluster.npy",
+                    "name": "mnist_10k",
                     "training":
                     {
-                        "x": "data/hepmass_10K_cluster.npy"
+                        "x": "data/mnist_x_test.npy",
+                        "_comment": "yes, x_test is correct, we want 10k rows"
                     }
                 }
             ]
@@ -42,10 +43,10 @@
             "dataset": [
                 {
                     "source": "npy",
-                    "name": "higgs_one_m_clustering",
+                    "name": "higgs1m",
                     "training":
                     {
-                        "x": "data/higgs_one_m_clustering.npy"
+                        "x": "data/higgs1m_x_train.npy"
                     }
                 }
             ],
@@ -57,10 +58,10 @@
             "dataset": [
                 {
                     "source": "npy",
-                    "name": "higgs_one_m_clustering",
+                    "name": "higgs1m",
                     "training":
                     {
-                        "x": "data/higgs_one_m_clustering.npy"
+                        "x": "data/higgs1m_x_train.npy"
                     }
                 }
             ],
@@ -72,10 +73,10 @@
             "dataset": [
                 {
                     "source": "npy",
-                    "name": "epsilon_50K_cluster",
+                    "name": "epsilon_100K",
                     "training":
                     {
-                        "x": "data/epsilon_50K_cluster.npy"
+                        "x": "data/epsilon_100K_x_train.npy"
                     }
                 }
             ],
@@ -87,10 +88,10 @@
             "dataset": [
                 {
                     "source": "npy",
-                    "name": "epsilon_50K_cluster",
+                    "name": "epsilon_100K",
                     "training":
                     {
-                        "x": "data/epsilon_50K_cluster.npy"
+                        "x": "data/epsilon_100K_x_train.npy"
                     }
                 }
             ],
@@ -132,10 +133,10 @@
             "dataset": [
                 {
                     "source": "npy",
-                    "name": "susy_cluster",
+                    "name": "susy",
                     "training":
                     {
-                        "x": "data/susy_cluster.npy"
+                        "x": "data/susy_x_train.npy"
                     }
                 }
             ],
@@ -147,10 +148,10 @@
             "dataset": [
                 {
                     "source": "npy",
-                    "name": "susy_cluster",
+                    "name": "susy",
                     "training":
                     {
-                        "x": "data/susy_cluster.npy"
+                        "x": "data/susy_x_train.npy"
                     }
                 }
             ],
@@ -162,10 +163,10 @@
             "dataset": [
                 {
                     "source": "npy",
-                    "name": "cifar_cluster",
+                    "name": "cifar_binary_x_test",
                     "training":
                     {
-                        "x": "data/cifar_cluster.npy"
+                        "x": "data/cifar_binary_x_train.npy"
                     }
                 }
             ],
