@@ -14,10 +14,10 @@
             "dataset": [
                 {
                     "source": "npy",
-                    "name": "mnist",
+                    "name": "mnist_10K_cluster",
                     "training":
                     {
-                        "x": "data/mnist_x_train.npy"
+                        "x": "data/mnist_10K_cluster.npy"
                     }
                 }
             ]
@@ -29,11 +29,10 @@
             "dataset": [
                 {
                     "source": "npy",
-                    "name": "mnist_10k",
+                    "name": "mnist_10K_cluster",
                     "training":
                     {
-                        "x": "data/mnist_x_test.npy",
-                        "_comment": "yes, x_test is correct, we want 10k rows"
+                        "x": "data/mnist_10K_cluster.npy"
                     }
                 }
             ]
